@@ -6,6 +6,10 @@ package leetcode;
  */
 
 
+import java.awt.*;
+import java.util.*;
+import java.util.List;
+
 /**
  * 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 的那 两个 整数，并返回它们的数组下标。
  * <p>
@@ -31,4 +35,37 @@ package leetcode;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class No1 {
+    public static void main(String[] args) {
+
+        int target = 16;
+        int num[] = new int[]{3, 4, 5, 6, 8, 8, 8, 8, 7, 6, 9};
+        HashMap<Integer, List<Integer>> map = new HashMap<>();
+        for (int i = 0; i < num.length; i++) {
+            if (map.containsKey(num[i])) {
+                map.get(num[i]).add(i);
+            } else {
+                List<Integer> list = new ArrayList<>();
+                list.add(i);
+                map.put(num[i], list);
+            }
+        }
+        Set<Integer> qu = new HashSet<>();
+        for (Map.Entry<Integer, List<Integer>> entry : map.entrySet()) {
+            if (map.containsKey(target - entry.getKey())) {
+                if (qu.contains(entry.getKey()) || qu.contains(target - entry.getKey())) {
+                    continue;
+                } else {
+                    qu.add(entry.getKey());
+                    qu.add(target - entry.getKey());
+                }
+                for (Integer integer : map.get(entry.getKey())) {
+                    for (Integer integer1 : map.get(target - entry.getKey())) {
+                        System.out.print("{" + integer + " " + integer1 + "}");
+                    }
+                }
+                map.entrySet().remove(entry.getKey());
+                map.entrySet().remove(target - entry.getKey());
+            }
+        }
+    }
 }
