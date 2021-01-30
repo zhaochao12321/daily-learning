@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.No1;
 
 /**
  * @Author: zhaochao
@@ -35,10 +35,12 @@ import java.util.List;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class No1 {
+
+
     public static void main(String[] args) {
 
-        int target = 16;
-        int num[] = new int[]{3, 4, 5, 6, 8, 8, 8, 8, 7, 6, 9};
+        int target = 6;
+        int num[] = new int[]{3, 2, 4};
         HashMap<Integer, List<Integer>> map = new HashMap<>();
         for (int i = 0; i < num.length; i++) {
             if (map.containsKey(num[i])) {
@@ -52,6 +54,7 @@ public class No1 {
         Set<Integer> qu = new HashSet<>();
         for (Map.Entry<Integer, List<Integer>> entry : map.entrySet()) {
             if (map.containsKey(target - entry.getKey())) {
+                //去重
                 if (qu.contains(entry.getKey()) || qu.contains(target - entry.getKey())) {
                     continue;
                 } else {
