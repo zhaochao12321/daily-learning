@@ -42,16 +42,16 @@ public class No3 {
     public int lengthOfLongestSubstring(String s) {
 
         Set<Character> set = new HashSet<>();
-       //todo 优化
-
+        //todo 优化
+        char[] chars = s.toCharArray();
         int longest = 0;
         for (int i = 0; i < s.length(); i++)
             for (int j = i; j < s.length(); j++) {
-                if (set.contains(s.charAt(j))) {
+                if (set.contains(chars[j])) {
                     set.clear();
                     break;
                 } else {
-                    set.add(s.charAt(j));
+                    set.add(chars[j]);
                     longest = longest > set.size() ? longest : set.size();
                 }
             }
