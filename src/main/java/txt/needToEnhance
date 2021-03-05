@@ -52,3 +52,5 @@
 49.Java内存分析工具--IDEA的JProfiler
 50.JVM Debugger Memory View
 51.Arthas
+52.ps -ef|grep java
+53. jstat -gc 19504 1000
