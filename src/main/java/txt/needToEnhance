@@ -50,3 +50,5 @@
 47.慢sql(数据库性能监控)
 48.线上bug排除思路
 49.Java内存分析工具--IDEA的JProfiler
+50.JVM Debugger Memory View
+51.Arthas
