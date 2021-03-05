@@ -54,3 +54,5 @@
 51.Arthas
 52.ps -ef|grep java
 53. jstat -gc 19504 1000
+54.jps
+55.文本查找
