@@ -32,7 +32,7 @@ public class QRCodeImage {
 
     public static void main(String[] args) {
         try {
-            String contents = "小达子，你干嘛呢";
+            String contents = "小咪咪真可爱";
             contents = new String(contents.getBytes("UTF-8"), "ISO-8859-1");//如果不想更改源码，则将字符串转换成ISO-8859-1编码
             generateQRCodeImage(contents, 350, 350, QR_CODE_IMAGE_PATH);
         } catch (WriterException e) {
