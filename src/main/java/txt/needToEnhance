@@ -60,4 +60,5 @@
 57.强引用，软引用，弱引用和虚引用
 58.耗时最长的线程 stack打印
 59.消息队列作用:解耦、异步、削峰
-60.ActiveMQ,RabbitMQ,RocketMQ,Kafka异同及选型(如何保证高可用性、消息不被重复消费、证消费的可靠性传输)
+60.ActiveMQ,RabbitMQ,RocketMQ,Kafka异同及选型(如何保证高可用性、消息不被重复消费、证消费的可靠性传输、保证消息的顺序性、消息消费时的幂等性、如何解决消息队列的延时以及过期失效问题？消息队列满了以后该怎么处理？有几百万消息持续积压几小时怎么解决)
+61.mvn dependency:tree    /   mvn dependency:tree -f service    树形结构输出工程的依赖，
