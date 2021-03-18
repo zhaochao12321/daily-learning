@@ -32,7 +32,7 @@
 30.sonar代码质量管理工具
 31.GFS、bigTable、mapperReduce  https://blog.csdn.net/wangxiaoqin00007/article/details/7091686
                                 https://github.com/hklgit/Google-MapReduce-GFS-BigTable
-32.jmeter
+32.jmeter  http://www.51ste.com/front/det-16.html
 33.GFS、bigTable、mapperReduce
 34.时序数据库
 35.http和https的区别
@@ -55,7 +55,7 @@
 52.ps -ef|grep java
 53. jstat -gc 19504 1000
 54.jps
-55.线上内存溢出解决，内存分析（mat）
+55.线上内存溢出解决，内存分析（mat）（https://hanchao.blog.csdn.net/article/details/80243489）（https://blog.csdn.net/yxz329130952/article/details/50288145）
 56.文本查找
 57.https://blog.csdn.net/qq784515681/article/details/85165486
 58.强引用，软引用，弱引用和虚引用
@@ -63,4 +63,4 @@
 60.消息队列作用:解耦、异步、削峰
 61.ActiveMQ,RabbitMQ,RocketMQ,Kafka异同及选型(如何保证高可用性、消息不被重复消费、证消费的可靠性传输、保证消息的顺序性、消息消费时的幂等性、如何解决消息队列的延时以及过期失效问题？消息队列满了以后该怎么处理？有几百万消息持续积压几小时怎么解决)
 62.mvn dependency:tree    /   mvn dependency:tree -f service    树形结构输出工程的依赖
-63.
+63.java性能瓶颈分析  （https://zhuanlan.zhihu.com/p/65325962）
