@@ -55,7 +55,7 @@
 52.ps -ef|grep java
 53. jstat -gc 19504 1000
 54.jps
-55.线上内存溢出解决，内存分析（mat）（https://hanchao.blog.csdn.net/article/details/80243489）（https://blog.csdn.net/yxz329130952/article/details/50288145）
+55.线上内存溢出解决，内存分析（mat）（https://hanchao.blog.csdn.net/article/details/80243489）（https://blog.csdn.net/yxz329130952/article/details/50288145） (https://zhuanlan.zhihu.com/p/164501731)
 56.文本查找
 57.https://blog.csdn.net/qq784515681/article/details/85165486
 58.强引用，软引用，弱引用和虚引用
