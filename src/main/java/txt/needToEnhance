@@ -64,4 +64,4 @@
 61.ActiveMQ,RabbitMQ,RocketMQ,Kafka异同及选型(如何保证高可用性、消息不被重复消费、证消费的可靠性传输、保证消息的顺序性、消息消费时的幂等性、如何解决消息队列的延时以及过期失效问题？消息队列满了以后该怎么处理？有几百万消息持续积压几小时怎么解决)
 62.mvn dependency:tree    /   mvn dependency:tree -f service    树形结构输出工程的依赖
 63.java性能瓶颈分析  （https://zhuanlan.zhihu.com/p/65325962）
-64.kibanalb使用
+64.elk,kibanalb使用
