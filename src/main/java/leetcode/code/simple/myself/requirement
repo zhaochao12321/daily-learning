@@ -1,0 +1,4 @@
+字符串按照字符出现的频率从高到低输出（自己找的算法）
+
+范例输入String a=abcbccbb
+        输出  bbbbccca
