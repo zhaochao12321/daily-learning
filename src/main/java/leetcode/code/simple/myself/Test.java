@@ -13,7 +13,7 @@ public class Test {
 
     public static void main(String[] args) {
         Test test = new Test();
-        String data = test.getCharFromString("abcbccbb");
+        String data = test.getCharFromString("abcbccbFGSFHDGFJHFHKJFGJKGJKJKFGHJFFRb");
         System.out.println(data);
     }
 
