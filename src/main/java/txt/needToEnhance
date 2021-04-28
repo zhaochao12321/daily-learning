@@ -65,3 +65,17 @@
 62.mvn dependency:tree    /   mvn dependency:tree -f service    树形结构输出工程的依赖
 63.java性能瓶颈分析  （https://zhuanlan.zhihu.com/p/65325962）
 64.elk,kibanalb使用
+65.df -h                这个命令用于查看服务器空间
+   du -sh *             这个命令也用于查看当前目录下各文件及文件夹占用大小
+   du -h --max-depth=1  这个命令用于查看当前目录，哪个文件占用最大
+   删除命令：rm [选项] 文件或目录  
+   选项说明：
+   -f　　　　-force　　　　　　忽略不存在的文件，强制删除，无任何提示
+   -i　　　　--interactive　　　 进行交互式地删除
+   -r | -R　　--recursive　　　  递归式地删除列出的目录下的所有目录和文件
+   -v　　　   --verbose　　　　详细显示进行的步骤
+   命令实例：
+   1、删除a.txt文件
+   rm -rf a.txt
+   2、删除mplogs目录
+   rm -rf mplogs
