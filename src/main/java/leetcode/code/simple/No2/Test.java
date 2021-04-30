@@ -9,7 +9,7 @@ public class Test {
 
     public static void main(String[] args) {
         Test test = new Test();
-        int m = test.reverse(-2147483648);
+        int m = test.reverse(-123);
         System.out.println(m);
     }
 
@@ -42,20 +42,22 @@ public class Test {
 
 
     public int reverse(int x) {
+        boolean xx = x < 0 ? true : false;
         int max = 10;
         if (-max < x && x < max) {
             return x;
 
         }
-        if ("-2147483648".equals(String.valueOf(x))) {
-            return 0;
-        }
+//        if ("-2147483648".equals(String.valueOf(x))) {
+//            return 0;
+//        }
         //之前有无非零位
         boolean zero = false;
         //返回值的绝对值
         int data = 0;
-        int m = Math.abs(x);
-        while (Math.abs(x) >= max) {
+//        int m = Math.abs(x);
+//        while (Math.abs(x) >= max) {
+        while (x != 0) {
             //之前有非零位
             if (zero) {
                 //边界测试
@@ -74,11 +76,8 @@ public class Test {
                 }
             }
         }
-        if (judge(data, x)) {
-            return 0;
-        }
-        data = 10 * data + Math.abs(x);
-        if (x < 0) {
+
+        if (xx) {
             return -data;
         }
         return data;
