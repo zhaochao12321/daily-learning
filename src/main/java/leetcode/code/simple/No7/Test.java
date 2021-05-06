@@ -42,6 +42,7 @@ public class Test {
 
 
     public int reverse(int x) {
+        //看正负
         boolean xx = x < 0 ? true : false;
         int max = 10;
         if (-max < x && x < max) {
