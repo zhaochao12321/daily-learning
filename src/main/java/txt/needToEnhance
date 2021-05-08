@@ -84,3 +84,4 @@
 68.Java数组转List的三种方式及对比   https://blog.csdn.net/x541211190/article/details/79597236
 69.懒汉和饿汗的优劣及使用场景
 70.拦截器过滤器，通过头信息传递参数
+71.ThreadLocal
