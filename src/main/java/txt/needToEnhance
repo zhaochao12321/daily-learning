@@ -81,3 +81,5 @@
    rm -rf mplogs
 66.分库分表的的实现
 67.高并发
+68.Java数组转List的三种方式及对比   https://blog.csdn.net/x541211190/article/details/79597236
+69.懒汉和饿汗的优劣及使用场景
