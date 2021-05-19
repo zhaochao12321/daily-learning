@@ -1,7 +1,6 @@
-package leetcode.code.simple.No101;
+package leetcode.code.simple.No101有种假对称没排除;
 
 import java.util.ArrayList;
-import java.util.TreeSet;
 import java.util.List;
 
 /**
@@ -23,23 +22,23 @@ public class Test {
         TreeNode T6 = new TreeNode();
         TreeNode T7 = new TreeNode();
 
-
+        /*    [1,2,2,2,null,2] */
         T1.val = 1;
         T2.val = 2;
         T3.val = 2;
-        T4.val = 3;
+        T4.val = 2;
         T5.val = 4;
-        T6.val = 4;
-        T7.val = 3;
+        T6.val = 2;
+//        T7.val = 3;
 
         T1.left = T2;
         T1.right = T3;
 
-        T2.right = T4;
-        T2.right = T5;
+        T2.left = T4;
+        T2.right = null;
 
         T3.left = T6;
-        T3.right = T7;
+//        T3.right = T7;
 
 
         boolean data = test.isSymmetric(T1);
@@ -100,8 +99,8 @@ public class Test {
     private boolean zhongxinduichen(List<Integer> data) {
         int indexMax = data.size() / 2;
 
-        for (int i = 0; i < indexMax; i++) {
-            if (!data.get(i).equals(data.get(i + indexMax + 1))) {
+        for (int i = 1; i + indexMax < data.size(); i++) {
+            if (!data.get(indexMax - i).equals(data.get(i + indexMax))) {
                 return false;
             }
 
@@ -121,7 +120,8 @@ public class Test {
     private List<Integer> zhongxu(TreeNode root, List<Integer> data) {
         if (root.left != null) {
             zhongxu(root.left, data);
-        } else {
+        }
+        else {
             data.add(-1);
         }
 
@@ -131,7 +131,7 @@ public class Test {
         if (root.right != null) {
             zhongxu(root.right, data);
         }
-        {
+       else  {
             data.add(-1);
         }
         return data;

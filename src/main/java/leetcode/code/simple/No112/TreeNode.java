@@ -1,4 +1,4 @@
-package leetcode.code.simple.No101;
+package leetcode.code.simple.No112;
 
 /**
  * @author zhaochao

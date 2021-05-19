@@ -1,4 +1,4 @@
-package leetcode.code.simple.No101;
+package leetcode.code.simple.No101有种假对称没排除;
 
 /**
  * @author zhaochao
