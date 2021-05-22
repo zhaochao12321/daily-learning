@@ -1,4 +1,4 @@
-package leetcode.code.simple.No122;
+package leetcode.code.simple.No122没思路;
 
 /**
  * @author zhaochao
