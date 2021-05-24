@@ -25,10 +25,15 @@ public class Solution {
 
         if (columnNumber < 27) {
             char data = (char) (64 + columnNumber);
-            return st + String.valueOf(data);
+            return String.valueOf(data) + st;
         } else {
             int gaowei = columnNumber / 26;
-            st = st + (char) (64 + gaowei);
+            int diewei = columnNumber % 26;
+            if (diewei == 0) {
+                diewei = 26;
+                gaowei--;
+            }
+            st = (char) (64 + diewei) + st;
             return convert(gaowei, st);
 
         }
