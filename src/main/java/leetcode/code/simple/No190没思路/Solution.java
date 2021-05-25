@@ -6,10 +6,18 @@ package leetcode.code.simple.No190没思路;
  */
 public class Solution {
 
-
-    // you need treat n as an unsigned value
     public int reverseBits(int n) {
-        return 0;
+        String s = Integer.toBinaryString(n);
+        char[] charData = s.toCharArray();
+        StringBuilder sb = new StringBuilder();
 
+        for (int i = charData.length - 1; i > -1; i--) {
+            sb.append(charData[i]);
+        }
+
+        String ss = sb.toString();
+
+        return 0;
+//        return ss;
     }
 }

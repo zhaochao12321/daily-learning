@@ -12,6 +12,12 @@ public class Test {
 
 
     public static void main(String[] args) {
+
+//        map 遍历
+//             for (Map.Entry<Long, List<LeBeansRecordDetailPojo>> entry : map.entrySet()) {
+//        }
+
+
         Test test = new Test();
         String data = test.getCharFromString("abcbccbFGSFHDGFJHFHKJFGJKGJKJKFGHJFFRb");
         System.out.println(data);
