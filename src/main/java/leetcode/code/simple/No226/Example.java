@@ -1,4 +1,4 @@
-package leetcode.code.simple.No226没想法;
+package leetcode.code.simple.No226;
 
 /**
  * @author zhaochao
