@@ -1,4 +1,4 @@
-package leetcode.code.simple.No303;
+package leetcode.code.simple.No303没思路;
 
 /**
  * @author zhaochao
